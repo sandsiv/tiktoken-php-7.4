@@ -2,22 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Yethee\Tiktoken;
+namespace guttedgarden\Tiktoken;
 
 use InvalidArgumentException;
-use Symfony\Contracts\Service\ResetInterface;
-use Yethee\Tiktoken\Vocab\Loader\DefaultVocabLoader;
-use Yethee\Tiktoken\Vocab\Vocab;
-use Yethee\Tiktoken\Vocab\VocabLoader;
+use guttedgarden\Tiktoken\Vocab\Loader\DefaultVocabLoader;
+use guttedgarden\Tiktoken\Vocab\Vocab;
+use guttedgarden\Tiktoken\Vocab\VocabLoader;
 
 use function getenv;
 use function sprintf;
-use function str_starts_with;
 use function sys_get_temp_dir;
 
 use const DIRECTORY_SEPARATOR;
 
-final class EncoderProvider implements ResetInterface
+final class EncoderProvider
 {
     private const ENCODINGS = [
         'r50k_base' => [
@@ -75,8 +73,8 @@ final class EncoderProvider implements ResetInterface
         'code-search-ada-code-001' => 'r50k_base',
     ];
 
-    private VocabLoader|null $vocabLoader = null;
-    private string|null $vocabCacheDir;
+    private ?VocabLoader $vocabLoader = null;
+    private ?string $vocabCacheDir;
 
     /** @var array<non-empty-string, Encoder> */
     private array $encoders = [];
@@ -103,7 +101,7 @@ final class EncoderProvider implements ResetInterface
         }
 
         foreach (self::MODEL_PREFIX_TO_ENCODING as $prefix => $modelEncoding) {
-            if (str_starts_with($model, $prefix)) {
+            if (strpos($model, $prefix) === 0) {
                 return $this->get($modelEncoding);
             }
         }
@@ -132,7 +130,7 @@ final class EncoderProvider implements ResetInterface
     }
 
     /** @param non-empty-string|null $cacheDir */
-    public function setVocabCache(string|null $cacheDir): void
+    public function setVocabCache(?string $cacheDir): void
     {
         $this->vocabCacheDir = $cacheDir;
         $this->vocabLoader = null;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yethee\Tiktoken\Exception;
+namespace guttedgarden\Tiktoken\Exception;
 
 use RuntimeException;
 

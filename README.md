@@ -4,7 +4,7 @@
 ![Build status](https://img.shields.io/github/actions/workflow/status/yethee/tiktoken-php/ci.yml?branch=master)
 ![License](https://img.shields.io/github/license/yethee/tiktoken-php)
 
-This is a port of the [tiktoken](https://github.com/openai/tiktoken).
+This is a port of the [tiktoken](https://github.com/openai/tiktoken) for PHP 7.4.
 
 ## Installation
 

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Yethee\Tiktoken\Util;
+namespace guttedgarden\Tiktoken\Util;
 
+use Closure;
 use function array_map;
 use function bin2hex;
-use function hexdec;
 use function pack;
 use function str_split;
 
@@ -20,7 +20,7 @@ final class EncodeUtil
      */
     public static function toBytes(string $text): array
     {
-        return array_map(hexdec(...), str_split(bin2hex($text), 2));
+        return array_map(Closure::fromCallable('hexdec'), str_split(bin2hex($text), 2));
     }
 
     /**

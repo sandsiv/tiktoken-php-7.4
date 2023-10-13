@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yethee\Tiktoken\Vocab;
+namespace guttedgarden\Tiktoken\Vocab;
 
 interface VocabLoader
 {
