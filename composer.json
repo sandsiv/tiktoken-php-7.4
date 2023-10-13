@@ -1,8 +1,8 @@
 {
   "name": "guttedgarden/tiktoken",
-  "type": "library",
-  "license": "MIT",
   "description": "PHP 7.4 version of tiktoken",
+  "license": "MIT",
+  "type": "library",
   "keywords": ["openai", "tiktoken", "tokenizer", "bpe", "encode", "decode"],
   "require": {
     "php": ">=7.4"
@@ -13,6 +13,7 @@
     }
   },
   "minimum-stability": "dev",
+  "version": "1.0.0",
   "config": {
     "sort-packages": true,
     "allow-plugins": {
