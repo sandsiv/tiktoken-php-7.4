@@ -12,7 +12,7 @@
       "guttedgarden\\Tiktoken\\": "src"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "version": "1.0.0",
   "config": {
     "sort-packages": true,
