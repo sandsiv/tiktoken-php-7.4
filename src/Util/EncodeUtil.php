@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace guttedgarden\Tiktoken\Util;
+namespace Sandsiv\Tiktoken\Util;
 
 use Closure;
 use function array_map;

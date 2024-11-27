@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace guttedgarden\Tiktoken\Exception;
+namespace Sandsiv\Tiktoken\Exception;
 
 use RuntimeException;
 

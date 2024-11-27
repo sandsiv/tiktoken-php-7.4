@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace guttedgarden\Tiktoken\Vocab\Loader;
+namespace Sandsiv\Tiktoken\Vocab\Loader;
 
 use RuntimeException;
-use guttedgarden\Tiktoken\Vocab\Vocab;
-use guttedgarden\Tiktoken\Vocab\VocabLoader;
+use Sandsiv\Tiktoken\Vocab\Vocab;
+use Sandsiv\Tiktoken\Vocab\VocabLoader;
 
 use function assert;
 use function fclose;

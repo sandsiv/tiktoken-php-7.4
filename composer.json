@@ -1,5 +1,5 @@
 {
-  "name": "guttedgarden/tiktoken",
+  "name": "sandsiv/tiktoken",
   "description": "PHP 7.4 version of tiktoken",
   "license": "MIT",
   "type": "library",
@@ -9,7 +9,7 @@
   },
   "autoload": {
     "psr-4": {
-      "guttedgarden\\Tiktoken\\": "src"
+      "Sandsiv\\Tiktoken\\": "src"
     }
   },
   "minimum-stability": "stable",

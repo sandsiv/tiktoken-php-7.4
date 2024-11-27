@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace guttedgarden\Tiktoken;
+namespace Sandsiv\Tiktoken;
 
 use Closure;
-use guttedgarden\Tiktoken\Exception\RegexError;
-use guttedgarden\Tiktoken\Util\EncodeUtil;
-use guttedgarden\Tiktoken\Vocab\Vocab;
+use Sandsiv\Tiktoken\Exception\RegexError;
+use Sandsiv\Tiktoken\Util\EncodeUtil;
+use Sandsiv\Tiktoken\Vocab\Vocab;
 
 use function array_map;
 use function array_slice;

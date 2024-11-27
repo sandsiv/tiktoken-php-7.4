@@ -2,17 +2,11 @@
 
 [Yethee's tiktoken library](https://github.com/yethee/tiktoken-php) port for PHP 7.4 without the Symfony package
 
-## Installation
-
-```bash
-$ composer require guttedgarden/tiktoken
-```
-
 ## Usage
 
 ```php
 
-use guttedgarden\Tiktoken\EncoderProvider;
+use Sandsiv\Tiktoken\EncoderProvider;
 
 $provider = new EncoderProvider();
 
@@ -37,7 +31,7 @@ You can override the directory for cache via environment variable `TIKTOKEN_CACH
 or use `EncoderProvider::setVocabCache()`:
 
 ```php
-use guttedgarden\Tiktoken\EncoderProvider;
+use Sandsiv\Tiktoken\EncoderProvider;
 
 $encProvider = new EncoderProvider();
 $encProvider->setVocabCache('/path/to/cache');
@@ -54,7 +48,7 @@ in one of the following ways:
 * Programmatically:
 
 ```php
-use guttedgarden\Tiktoken\EncoderProvider;
+use Sandsiv\Tiktoken\EncoderProvider;
 
 $encProvider = new EncoderProvider();
 $encProvider->setVocabCache(null); // disable the cache

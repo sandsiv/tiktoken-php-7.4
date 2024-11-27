@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace guttedgarden\Tiktoken\Vocab;
+namespace Sandsiv\Tiktoken\Vocab;
 
 use Closure;
 use Countable;
 use InvalidArgumentException;
 use OutOfBoundsException;
 use RuntimeException;
-use guttedgarden\Tiktoken\Exception\ParseError;
-use guttedgarden\Tiktoken\Util\EncodeUtil;
+use Sandsiv\Tiktoken\Exception\ParseError;
+use Sandsiv\Tiktoken\Util\EncodeUtil;
 
 use function array_flip;
 use function array_map;

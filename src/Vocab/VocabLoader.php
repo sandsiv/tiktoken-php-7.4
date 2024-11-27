@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace guttedgarden\Tiktoken\Vocab;
+namespace Sandsiv\Tiktoken\Vocab;
 
 interface VocabLoader
 {
